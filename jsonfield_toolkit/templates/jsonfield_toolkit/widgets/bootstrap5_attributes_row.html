@@ -1,0 +1,12 @@
+{% load i18n %}
+<div class="d-flex align-content-end attributes-pair mb-3">
+  <div class="flex-shrink-1 me-2">
+    {{ widget }}
+    {% comment %} <input type="text" class="attributes-key form-control" name="attributes_key[{{ field_name }}]" value="{{ key }}" {{ key_attrs }} placeholder="{% trans "Key" %}"> {% endcomment %}
+  </div>
+  <div class="d-flex flex-column">
+    <button type="button"
+            class="btn btn-outline-danger delete-attributes-pair"
+            aria-label="Delete">X</button>
+  </div>
+</div>

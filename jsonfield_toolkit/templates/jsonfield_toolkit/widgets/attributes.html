@@ -1,0 +1,11 @@
+{% load i18n %}
+<div class="djangocms-attributes-field">
+  {{ bound_items }}
+  <div class="template hidden">
+    {% include "jsonfield_toolkit/widgets/bootstrap5_attributes_row.html" with field_name=widget.name %}
+  </div>
+  <div class="related-widget-wrapper">
+    <button class="add-attributes-pair btn btn-primary addlink"
+            title="{% trans "Add another" %}">{% trans "Add another" %}</button>
+  </div>
+</div>
